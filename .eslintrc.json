@@ -21,6 +21,9 @@
   "rules": {
     "prettier/prettier": "error",
     "react/jsx-one-expression-per-line": "off",
+    "react/function-component-definition": "off",
+    "react/require-default-props": "off",
+    "react/no-unused-prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [
@@ -31,6 +34,7 @@
     ],
     "import/prefer-default-export": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
