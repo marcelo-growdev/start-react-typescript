@@ -10,9 +10,9 @@ const initialState = {
 
 const userReducer = (
   state: IUser = initialState,
-  { action, payload }: IActions,
+  { type, payload }: IActions,
 ) => {
-  switch (action) {
+  switch (type) {
     case USER_SESSION.LOGIN:
       return payload;
 
