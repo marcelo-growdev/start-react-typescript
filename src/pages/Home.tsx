@@ -1,7 +1,13 @@
 import React from 'react';
 import { Grid, Typography, Container } from '@mui/material';
+import { useDispatch } from 'react-redux';
+import { login } from '../store/modules/user/actions';
 
 const Home: React.FC = () => {
+  const dispatch = useDispatch();
+
+  dispatch(login({ user: 'teste', password: 'teste' }));
+
   return (
     <Grid container>
       <Grid item>

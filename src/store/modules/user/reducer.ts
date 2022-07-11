@@ -1,13 +1,18 @@
 /* eslint-disable default-param-last */
 import { IActions } from '../../types';
-import { IUser } from './models';
 import { USER_SESSION } from './constants';
 
-const initialState = {
+export interface IUser {
+  user: any;
+  login: string;
+  password?: string;
+}
+
+const initialState: IUser = {
   login: '',
+  user: '',
   password: '',
 };
-
 const userReducer = (
   state: IUser = initialState,
   { type, payload }: IActions,
